@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhydeen | Frontend Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  background: #2d0b5c;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav h2 {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(135deg, #6a0dad, #3b0a75);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  margin: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #ffd700;
+  color: #2d0b5c;
+}
+
+.btn-primary:hover {
+  background: white;
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #2d0b5c;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #2d0b5c;
+}
+
+/* ABOUT */
+.about p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+/* SKILLS */
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* PROJECTS */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* CONTACT */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+  border-color: #6a0dad;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: #6a0dad;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #3b0a75;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: 500;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* FOOTER */
+footer {
+  background: #2d0b5c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Muhydeen</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <h1>Hi, I'm Muhydeen 👋</h1>
+  <p>Frontend Developer Crafting Clean, Responsive & User-Focused Web Experiences</p>
+  <div class="buttons">
+    <a href="#projects" class="btn-primary">View My Work</a>
+    <a href="#contact" class="btn-secondary">Contact Me</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a passionate frontend developer focused on building responsive,
+    accessible and user-friendly websites. I enjoy turning ideas into
+    interactive digital experiences using modern web technologies.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Responsive Design</div>
+    <div class="skill">Git & GitHub</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A modern responsive personal portfolio built with HTML, CSS & JavaScript.</p>
+    </div>
+    <div class="project-card">
+      <h3>Landing Page</h3>
+      <p>Clean product landing page with responsive design and smooth UI effects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+    <div id="formMessage"></div>
+  </form>
+</section>
+
+<footer>
+  © 2026 Muhydeen. Built with ❤️ using HTML, CSS & JavaScript.
+</footer>
+
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var messageBox = document.getElementById("formMessage");
+
+  if (name === "" || email === "") {
+    messageBox.innerHTML = "Please fill in all required fields.";
+  } else {
+    messageBox.innerHTML = "Thank you, " + name + ". I will get back to you shortly via " + email + ".";
+  }
+
+  messageBox.style.opacity = "1";
+
+  setTimeout(function() {
+    messageBox.style.opacity = "0";
+  }, 3000);
+
+  return false;
+}
+</script>
+
+</body>
+</html>
